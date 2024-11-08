@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts-alpine
 USER root
 
 # Pipeline
-#RUN /usr/local/bin/install-plugins.sh workflow-aggregator && \
+RUN install-plugins.sh workflow-aggregator # && \
 #    /usr/local/bin/install-plugins.sh github && \
 #    /usr/local/bin/install-plugins.sh ws-cleanup && \
 #    /usr/local/bin/install-plugins.sh greenballs && \
